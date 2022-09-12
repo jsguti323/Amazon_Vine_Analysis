@@ -5,6 +5,7 @@ The orignal goal of this analysis was to determine if there was any bias toward 
 
 ## Results
 Data Source: https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+Tableau Story: https://public.tableau.com/views/Amazon_Reviews/Amazon_Analysis?:language=en-US&:display_count=n&:origin=viz_share_link
 
 We began the analysis by extracting the data from the Amazon Reviews datasets page, transforming it, and loading it into a PostgreSQL Database hosted on AWS. The following is a snippet of the final, cleaned tables in the database:
 
