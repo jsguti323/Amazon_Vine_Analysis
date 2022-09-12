@@ -47,3 +47,40 @@ AND
 	vine = 'Y'
 AND
 	star_rating = 5;
+
+
+-- Number of reviews bu a customer with 2 or more reviews as well as their average rating --
+select
+	car.customer_id, ct.customer_count, car.avg_rating
+from
+	(select rt.customer_id, round(avg(vt.star_rating), 1) as avg_rating
+	from review_id_table as rt
+	join vine_table as vt
+	on rt.review_id = vt.review_id
+	group by rt.customer_id) as car
+join
+	customers_table as ct
+on
+	car.customer_id = ct.customer_id
+where
+	ct.customer_count >= 2
+order by
+	car.avg_rating desc, ct.customer_count desc;
+
+-- Number of reviews by a customer with only 1 as well as their average rating --
+select
+	car.customer_id, ct.customer_count, car.avg_rating
+from
+	(select rt.customer_id, round(avg(vt.star_rating), 0) as avg_rating
+	from review_id_table as rt
+	join vine_table as vt
+	on rt.review_id = vt.review_id
+	group by rt.customer_id) as car
+join
+	customers_table as ct
+on
+	car.customer_id = ct.customer_id
+where
+	ct.customer_count = 1
+order by
+	car.avg_rating desc, ct.customer_count desc;
