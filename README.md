@@ -48,7 +48,12 @@ We began the analysis by extracting the data from the Amazon Reviews datasets pa
 
 ![One_Review_Ratings](https://user-images.githubusercontent.com/99751636/189722746-f2f1bc3c-72e4-4253-8383-319d5c0dd631.png)
 
-* Check to see if customers who only leave one result tend to leave negative or positive reviews
+* Here we are interested in the ratings given by customers with onle 1 reviews. This is a likely indiicator of what type of user experiences prompts a user to leave a review.
+* 5 Stars: 743,450 Reviews
+* 4 Stars: 172,993 Reviews
+* 3 Stars: 61,958 Reviews
+* 2 Stars: 52,217 Reviews
+* 1 Star: 101,282 Reviews
 
 
 ### Reviews by Custoemrs with More than One Review
