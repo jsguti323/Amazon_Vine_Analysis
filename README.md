@@ -62,3 +62,6 @@ We began the analysis by extracting the data from the Amazon Reviews datasets pa
 
 * Here we see the average rating given by amazon customers that have left more than 1 review.
 * Again, the trend is apparent; customers that leave more than 1 review typically give good reviews. We see two relative maximum values at 4.0 and 4.5 stars, with the absolutle maximum value coming at 5.0 stars.
+
+## Summary
+The vast majority of customers leaving book reviews on Amazon are non-vine members. Typiclally a good experience with a book elicits the need to leave a review more so than a negative experience does. Of the customers who felt compelled to leave more than one review, the trend is simiilar: most customers that have more than one review have an average star rating of 5 stars. Also, most reviews come from non-verified purchases, but the distribution of reviews from verified versus non-verified purchases are the same with most customers gving a 5 star rating.
