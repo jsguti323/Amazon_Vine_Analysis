@@ -48,7 +48,7 @@ We began the analysis by extracting the data from the Amazon Reviews datasets pa
 
 ![One_Review_Ratings](https://user-images.githubusercontent.com/99751636/189722746-f2f1bc3c-72e4-4253-8383-319d5c0dd631.png)
 
-* Here we are interested in the ratings given by customers with onle 1 reviews. This is a likely indiicator of what type of user experiences prompts a user to leave a review.
+* Here we are interested in the ratings given by customers with only 1 reviews. This is a likely indiicator of what type of user experiences prompts a user to leave a review.
 * 5 Stars: 743,450 Reviews
 * 4 Stars: 172,993 Reviews
 * 3 Stars: 61,958 Reviews
@@ -60,4 +60,5 @@ We began the analysis by extracting the data from the Amazon Reviews datasets pa
 
 ![Review_Ratings](https://user-images.githubusercontent.com/99751636/189722930-60e32ade-c23d-4805-af1c-3d3a78ed09dd.png)
 
-
+* Here we see the average rating given by amazon customers that have left more than 1 review.
+* Again, the trend is apparent; customers that leave more than 1 review typically give good reviews. We see two relative maximum values at 4.0 and 4.5 stars, with the absolutle maximum value coming at 5.0 stars.
